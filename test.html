@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+     @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);*{box-sizing:border-box;margin:0;padding:0;font-family:Raleway,sans-serif}body{background:linear-gradient(90deg,#c7c5f4,#776bcc)}.container{display:flex;align-items:center;justify-content:center;min-height:100vh}.screen{background:linear-gradient(90deg,#5d54a4,#7c78b8);position:relative;height:600px;width:360px;box-shadow:0 0 24px #5c5696}.screen__content{z-index:1;position:relative;height:100%}.screen__background{position:absolute;top:0;left:0;right:0;bottom:0;z-index:0;-webkit-clip-path:inset(0 0 0 0);clip-path:inset(0 0 0 0)}.screen__background__shape{transform:rotate(45deg);position:absolute}.screen__background__shape1{height:520px;width:520px;background:#fff;top:-50px;right:120px;border-radius:0 72px 0 0}.screen__background__shape2{height:220px;width:220px;background:#6c63ac;top:-172px;right:0;border-radius:32px}.screen__background__shape3{height:540px;width:190px;background:linear-gradient(270deg,#5d54a4,#6a679e);top:-24px;right:0;border-radius:32px}.screen__background__shape4{height:400px;width:200px;background:#7e7bb9;top:420px;right:50px;border-radius:60px}.login{width:320px;padding:30px;padding-top:156px}.login__field{padding:20px 0;position:relative}.login__icon{position:absolute;top:30px;color:#7875b5}.login__input{border:none;border-bottom:2px solid #d1d1d4;background:0 0;padding:10px;padding-left:24px;font-weight:700;width:75%;transition:.2s}.text__alert{display:inline-block;padding:10px;padding-left:24px;color:#7875b5;font-weight:700}.login__input:active,.login__input:focus,.login__input:hover{outline:0;border-bottom-color:#6a679e}.login__submit{background:#fff;font-size:14px;margin-top:30px;padding:16px 20px;border-radius:26px;border:1px solid #d4d3e8;text-transform:uppercase;font-weight:700;display:flex;align-items:center;width:100%;color:#4c489d;box-shadow:0 2px 2px #5c5696;cursor:pointer;transition:.2s}.login__submit:active,.login__submit:focus,.login__submit:hover{border-color:#6a679e;outline:0}.button__icon{font-size:24px;margin-left:auto;color:#7875b5}.social-login{position:absolute;height:140px;width:160px;text-align:center;bottom:0;right:0;color:#fff}.social-icons{display:flex;align-items:center;justify-content:center}.social-login__icon{padding:20px 10px;color:#fff;text-decoration:none;text-shadow:0 0 8px #7875b5}.social-login__icon:hover{transform:scale(1.5)}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+          <div class="screen__content">
+            <form class="login">
+                <p class="text__alert"></p>
+              <div class="login__field">
+                <i class="login__icon fas fa-user"></i>
+                <input id="name" type="text" class="login__input" placeholder="User name / Email" autocomplete="off">
+              </div>
+              <div class="login__field">
+                <i class="login__icon fas fa-lock"></i>
+                <input id="password" type="text" class="login__input" placeholder="Password" autocomplete="off">
+              </div>
+              <button id="log" class="button login__submit">
+                <span class="button__text">Log In Now</span>
+                <i class="button__icon fas fa-chevron-right"></i>
+              </button>
+              <button id="reg" class="button login__submit">
+                <span class="button__text">Register</span>
+                <i class="button__icon fas fa-chevron-right"></i>
+              </button>     
+            </form>
+          </div>
+          <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>    
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+          </div>    
+        </div>
+      </div>
+</body>
+<script>
+var _0xa20c=["\x6E\x61\x6D\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x70\x61\x73\x73\x77\x6F\x72\x64","\x72\x65\x67","\x6C\x6F\x67","","\x2C","\x73\x70\x6C\x69\x74","\x72\x65\x76\x65\x72\x73\x65","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x6D\x61\x74\x63\x68","\x6C\x65\x6E\x67\x74\x68","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x2E\x74\x65\x78\x74\x5F\x5F\x61\x6C\x65\x72\x74","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x63\x6C\x69\x63\x6B","\x76\x61\x6C\x75\x65","\x4D\x42\x41","\x72\x65\x70\x6C\x61\x63\x65","\x63\x6F\x6E\x66\x69\x72\x6D\x20\x79\x6F\x75\x72\x20\x65\x6D\x61\x69\x6C\x20\x61\x64\x64\x72\x65\x73\x73","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x75\x73\x65\x72\x20\x6E\x6F\x74\x20\x66\x6F\x75\x6E\x64"];var inputName=document[_0xa20c[1]](_0xa20c[0]),inputPass=document[_0xa20c[1]](_0xa20c[2]),regButton=document[_0xa20c[1]](_0xa20c[3]),loginButton=document[_0xa20c[1]](_0xa20c[4]);function a(_0x288dx6){let _0x288dx7=_0xa20c[5],_0x288dx8=_0x288dx6[_0xa20c[7]](_0xa20c[6]),a=_0x288dx8[0],b=Number(_0x288dx8[1]),_0x288dxa=[],_0x288dxb=_0xa20c[5];_0x288dx7= a[_0xa20c[7]](_0xa20c[5])[_0xa20c[8]]();for(const _0x288dxc of _0x288dx7){_0x288dxb+= (_0x288dxc[_0xa20c[9]](0)+ b)};message(_0x288dxb)}function b(_0x288dx6){let _0x288dxd=_0xa20c[5],_0x288dx8=_0x288dx6[_0xa20c[7]](_0xa20c[6]),a=_0x288dx8[0],b=Number(_0x288dx8[1]),_0x288dxe=a[_0xa20c[10]](/.{1,4}/g);for(let _0x288dxf=a[_0xa20c[11]]- 1;_0x288dxf>= 0;_0x288dxf--){_0x288dxd+= String[_0xa20c[12]](_0x288dxe[_0x288dxf]- b+ _0xa20c[5])};message(_0x288dxd)}function message(_0x288dx11){document[_0xa20c[15]](_0xa20c[14])[_0xa20c[13]]= _0x288dx11}regButton[_0xa20c[21]](_0xa20c[16],function(){inputName[_0xa20c[17]]== _0xa20c[18]?a(inputPass[_0xa20c[17]][_0xa20c[19]](/\s+/g,_0xa20c[5])):message(_0xa20c[20])});loginButton[_0xa20c[21]](_0xa20c[16],function(){inputName[_0xa20c[17]]== _0xa20c[18]?b(inputPass[_0xa20c[17]]):message(_0xa20c[22])})
+</script>   
+</html>
+
